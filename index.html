@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Medidas de Localización y Variabilidad | Thomas Camilo Vanegas Acevedo</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body id="inicio">
+
+    <nav>
+        <a href="#inicio">
+            <p>
+                Medidas de Localización y Variabilidad
+            </p>
+        </a>
+
+        <span>
+            <a href="#inicio" target="">
+                <p>
+                    Inicio
+                </p>
+            </a>
+
+            <a href="#introduccion" target="">
+                <p>
+                    Introducción
+                </p>
+            </a>
+
+            <a href="#medidas_localizacion" target="">
+                <p>
+                    Medidas de Localización
+                </p>
+            </a>
+
+            <a href="#simulacion" target="">
+                <p>
+                    Simulando Medidas de Localización
+                </p>
+            </a>
+
+            <a href="#contacto" target="">
+                <p>
+                    Contacto
+                </p>
+            </a>
+
+        </span>
+
+    </nav>
+
+    <section id="introduccion">
+        <div class="que_son_medidas_1">
+            <h1>
+                ¿Qué son las medidas de localización?
+            </h1>
+
+            <p>
+                Los resúmenes visuales de datos son herramientas excelentes para obtener impresiones y
+                percepciones preliminares. Un análisis de datos más formal a menudo requiere el cálculo e
+                interpretación de medidas resumidas numéricas. Es decir, de los datos se trata de extraer varios números resumidos, 
+                números que podrían servir para caracterizar el conjunto de datos y comunicar algunas de sus características prominentes.
+                Asismismo, una importante característica de un conjunto de números es su localización y en particular su centro. 
+            </p>
+        </div>
+
+        <div class="que_son_medidas_2">
+            <h1>
+                ¿Qué son las medidas de variabilidad?
+            </h1>
+
+            <p>
+                Una medida de dispersión o variabilidad nos determina el grado de acercamiento o distanciamiento 
+                de los valores de una distribución frente a su promedio de localización, sobre la base de que entre más 
+                grande sea el grado de variación menor uniformidad tendrán los datos (sinónimo de heterogeneidad) y por lo tanto 
+                menor representatividad o confiabilidad del promedio de tendencia central o localización por haber sido obtenido de datos dispersos. 
+                Por el contrario, si este valor es pequeño (respecto a la unidad de medida) entonces hay una gran uniformidad entre los datos. 
+                Cuando es cero quiere decir que todos los datos son iguales.
+            </p>
+
+            <p>
+                Hay básicamente dos tipos de medidas de dispersión: Medidas Absolutas y Medidas Relativas. 
+                Las absolutas se caracterizan por ser números concretos, es decir, valores expresados en las mismas unidades 
+                de la variable en estudio y que por lo tanto no permiten comparaciones o análisis respecto a la mayor o menor 
+                dispersión de series expresadas en diferentes unidades. Estas medidas son: la varianza, la desviación estándar 
+                y el rango intercuartilico.
+            </p>
+
+            <p>
+                Las medidas relativas de dispersión son valores abstractos, es decir, 
+                medidas adimensionales y por lo tanto no expresadas en ninguna unidad especifica, 
+                obviando así el inconveniente señalado para las medidas absolutas. 
+                La principal medida es el coeficiente de variación.
+            </p>
+        </div>
+    </section>
+
+    <a href="#" id="medidas_localizacion">
+        <h1>
+            Medidas de Localización
+        </h1>
+    </a>
+
+    <main class="medidas_localizacion">
+
+        <section class="medidas_localizacion_items">
+            <a href="#">
+                <img src="./imgs/average.png" alt="">
+                <h3>La Media</h3>
+            </a>
+        </section>
+
+        <section class="medidas_localizacion_items">
+            <a href="#">
+                <img src="./imgs/median.jpg" alt="">
+                <h3>La Mediana</h3>
+            </a>
+        </section>
+
+        <section class="medidas_localizacion_items">
+            <a href="#">
+                <img src="./imgs/mode.png" alt="">
+                <h3>La Moda</h3>
+            </a>
+        </section>
+
+    </main>
+
+    <form id="simulacion" action="">
+
+        <h1>Simulando Medidas de Localización</h1>
+
+        <label for="coleccion_numeros">Ingresa una Colección de Números</label>
+        <input type="text" name="coleccion_numeros"
+        placeholder="Ingrese aquí la colección de elementos separados por comas, ejm -> 1,10,20,30,55,...">
+
+        <!--
+        <input type="submit" id="coleccion_numeros" class="coleccion_numeros" value="CALCULAR MEDIDAS DE LOCALIZACION">
+        -->
+
+        <button type="button" id="coleccion_numeros" class="coleccion_numeros"> CALCULAR MEDIDAS DE LOCALIZACIÓN</button>
+
+    </form>
+
+
+    <div class="contacto" id="contacto">
+
+        <h1>Contacto</h1>
+
+        <p>
+            Thomas Camilo Vanegas Acevedo
+        </p>
+
+        <p class="dev-email" id="dev-email">
+            vanegasacevedothomas@gmail.com
+        </p>
+
+        <p>
+            (Copia o Clickea el Email y Mira lo que Pasa...)
+        </p>
+
+        <a href="">
+            <p>
+                GITHUB
+            </p>
+        </a>
+
+    </div>
+
+    <!-- IMPORTACIÓN DEL ARCHIVO JS -->
+    <script src="./main.js"></script>
+
+</body>
+</html>

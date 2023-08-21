@@ -1,0 +1,187 @@
+/* DEFINICION DEL COMPORTAMIENTO DE LAS CAJAS EN TODO EL DOCUMENTO HTML (BUENAS PRÁCTICA) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS */
+img {
+    height: 20vh;
+    width: 10vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}
+
+nav {
+    height: 10vh;
+    background: linear-gradient(to right, rgb(98, 0, 128), rgb(255, 0, 187));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav span {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a {
+    font-size: 3vh;
+}
+
+
+#introduccion {
+    height: 70vh;
+}
+
+#introduccion h1 {
+    background: linear-gradient(to right,rgb(98, 0, 128), rgb(255, 0, 187));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+#introduccion div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.que_son_medidas_1 {
+    height: 30%;
+}
+
+.que_son_medidas_1 p {
+    width: 80vw;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.que_son_medidas_2 {
+    height: 70%;
+}
+
+.que_son_medidas_2 p {
+    width: 80vw;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.medidas_localizacion {
+    display: grid;
+    grid-template-columns: 32vw 32vw 32vw;
+    grid-template-rows: 40vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.medidas_localizacion_items {
+    border: 0.5vw rgb(98, 0, 128) solid;
+    border-radius: 20%;
+}
+
+.medidas_localizacion_items:hover {
+    border: 0.5vw rgb(255, 0, 187) solid;
+}
+
+.medidas_localizacion_items img {
+    border-radius: 20%;
+}
+
+.medidas_localizacion_items h3 {
+    text-align: center;
+}
+
+.medidas_localizacion_items a:hover {
+    color: rgb(255, 0, 187);
+}
+
+#medidas_localizacion h1 {
+    text-align: center;
+    background: linear-gradient(to right,rgb(98, 0, 128), rgb(255, 0, 187));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Formulario Simulando Medidas de Localizacion */
+#simulacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+
+#simulacion h1 {
+    text-align: center;
+    background: linear-gradient(to right,rgb(98, 0, 128), rgb(255, 0, 187));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#simulacion label {
+    font-size: large;
+    font-weight: bold;
+}
+
+#simulacion input {
+    width: 50vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.coleccion_numeros {
+    width: 10vw;
+    height: 10vh;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(98, 0, 128);
+    border: 2px rgb(98, 0, 128) solid;
+    border-radius: 5%;
+}
+
+#simulacion button:hover{
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+    color: rgb(255, 0, 187);
+    border: 2px rgb(255, 0, 187) solid;
+    border-radius: 5%;
+}
+
+/* Apartado Contacto Desarrollador */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+.contacto h1 {
+    text-align: center;
+    background: linear-gradient(to right,rgb(98, 0, 128), rgb(255, 0, 187));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contacto p {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.dev-email:hover {
+    cursor: pointer;
+    color: rgb(98, 0, 128);
+}
