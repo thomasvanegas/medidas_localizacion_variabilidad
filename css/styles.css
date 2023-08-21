@@ -38,7 +38,7 @@ nav span {
 }
 
 nav a {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 
@@ -184,4 +184,18 @@ nav a {
 .dev-email:hover {
     cursor: pointer;
     color: rgb(98, 0, 128);
+}
+
+/* Estilos para el carrusel en swiper */
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+/* Medidas de Variabilidad */
+#medidas_variabilidad_title{
+        text-align: center;
+        background: linear-gradient(to right,rgb(98, 0, 128), rgb(255, 0, 187));
+        -webkit-background-clip: text;
+        color: transparent;
 }

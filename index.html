@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Medidas de Localización y Variabilidad | Thomas Camilo Vanegas Acevedo</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!-- Uso de Rutas Relativas para importación de archivos y recursos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./imgs/mode.ico" type="image/x-icon">
+
+    <!-- IMPORTACIÓN DE SWIPER-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 </head>
 
 <body id="inicio">
@@ -34,6 +42,12 @@
             <a href="#medidas_localizacion" target="">
                 <p>
                     Medidas de Localización
+                </p>
+            </a>
+
+            <a href="#medidas_variabilidad_title" target="">
+                <p>
+                    Medidas de Variabilidad
                 </p>
             </a>
 
@@ -171,8 +185,36 @@
 
     </div>
 
-    <!-- IMPORTACIÓN DEL ARCHIVO JS -->
-    <script src="./main.js"></script>
+    <h1 id="medidas_variabilidad_title">Medidas de Variabilidad</h1>
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+
+
+    <!-- IMPORTACIÓN DEL ARCHIVO JS MEDIANTE USO DE RUTAS RELATIVAS -->
+    <script src="./js/main.js"></script>
+
+    <!-- IMPORTACIÓN DE LA LIBRERÍA DE ANIMACIONES SWIPER-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 
 </body>
 </html>
